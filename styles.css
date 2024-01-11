@@ -1,0 +1,176 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  max-width: 414px;
+  height: 896px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 40px;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 10px;
+  border: 1px solid grey;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: flex-end;
+  padding-top: 40px;
+}
+
+.title {
+  margin-bottom: 45px;
+}
+
+.title h1 {
+  color: #17171b;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title p {
+  color: #747476;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+
+.input {
+  display: flex;
+  padding: 20px 25px;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0px;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+}
+
+/*
+
+ <div class="input">
+            <div class="src-img">
+              <img src="./img/Search.png" alt="" />
+            </div>
+            <input
+              type="poke-search"
+              placeholder="What Pokémon are you looking for?"
+            />
+          </div>
+
+.src-image{
+    display: flex;
+    padding: 20px 25px;
+}
+*/
+
+input[type="poke-search"] {
+  display: flex;
+  border: none;
+  background-color: #f2f2f2;
+  width: 254px;
+  height: 19px;
+  color: #747476;
+}
+
+.grass-card {
+  background-color: #8bbe8a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  max-height: 120px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 20px 0px #8BBE8A66;
+}
+
+.fire-card {
+  background-color: #ffa756;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  max-height: 120px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 30px;
+  box-shadow: 0px 10px 20px 0px #FFA75666;
+
+}
+
+.id {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(23, 23, 27, 0.6);
+}
+
+.card-info h1 {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.poketype {
+  display: inline-flex;
+  padding: 5px;
+  align-items: center;
+  gap: 5px;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: white;
+  padding: 5px;
+  gap: 5px;
+  border-radius: 3px;
+}
+
+.poke-img {
+  position: absolute;
+  margin-left: 60%;
+  margin-bottom: 5%;
+}
+
+#grass {
+  background-color: #62b957;
+}
+
+#poison {
+  background-color: #a552cc;
+}
+
+#fire {
+  background-color: #fd7d24;
+}
+
+.pokeball-img {
+  position: absolute;
+  margin-left: 232px;
+  margin-top: 5px;
+}
+
+.pokeball-bg {
+  position: absolute;
+  z-index: -1;
+  margin-left: -20px;
+}
