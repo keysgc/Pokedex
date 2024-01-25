@@ -4,6 +4,7 @@
 }
 
 .container {
+  position: relative;
   max-width: 414px;
   height: 896px;
   margin-left: auto;
@@ -82,8 +83,7 @@ input[type="poke-search"] {
   color: #747476;
 }
 
-.grass-card {
-  background-color: #8bbe8a;
+.pokecard {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,19 +92,15 @@ input[type="poke-search"] {
   border-radius: 10px;
   position: relative;
   margin-bottom: 30px;
+}
+
+.grass-card {
+  background-color: #8bbe8a;
   box-shadow: 0px 10px 20px 0px #8BBE8A66;
 }
 
 .fire-card {
   background-color: #ffa756;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 10px;
-  max-height: 120px;
-  border-radius: 10px;
-  position: relative;
-  margin-bottom: 30px;
   box-shadow: 0px 10px 20px 0px #FFA75666;
 
 }
@@ -172,5 +168,6 @@ input[type="poke-search"] {
 .pokeball-bg {
   position: absolute;
   z-index: -1;
-  margin-left: -20px;
+  left: 50%; /* 50% à direita do pai */
+  translate: -50%; /* -50% do tamanho do próprio elemento */
 }
